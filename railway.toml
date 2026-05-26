@@ -1,0 +1,5 @@
+[build]
+watchPatterns = ["agent-vocal-rdv/**"]
+
+[deploy]
+startCommand = "cd agent-vocal-rdv && uvicorn main:app --host 0.0.0.0 --port $PORT"
